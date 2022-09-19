@@ -1,0 +1,140 @@
+.container{
+  display: flex;
+  background: #FF6800;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+}
+//.container:hover{
+//  background: #F5F5F5;
+//}
+.container-content{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(19.18deg, #69BBFF 0%, #69BBFF 0.01%, #56B7FF 0.02%, #64B9FF 0.03%, #9DE0F4 99.44%);
+  opacity: 0.95;
+}
+.img-front:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.form{
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 70px;
+  .input-text{
+    height: 48px;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 350px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-size: 16px;
+    outline: none;
+  }
+  .input-search{
+    width: 70px;
+    height: 50px;
+    background: linear-gradient(21.14deg, #FF6800 -88.73%, #FFF100 216.61%);
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+  }
+  .input-search:hover{
+    background: linear-gradient(21.14deg, #FF6800 36.27%, #FFF100 306.61%);
+    cursor: pointer;
+  }
+}
+.temp-gr{
+  display: flex;
+  flex-direction: row;
+}
+.celsius{
+  padding: 0 20px;
+}
+.form-clock{
+  text-align: center;
+  border: none;
+  background: space;
+  color: #fff;
+}
+.temperature{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-size: 46px;
+  backdrop-filter: blur(20px);
+  .temperature-day{
+    font-weight: bold;
+  }
+  .temperature-dislocation{
+    margin-bottom: initial;
+  }
+  .temperature-degrees{
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .inputF{
+    width: 50px;
+    height: 40px;
+  }
+  .temperature-details{
+    display: flex;
+    flex-direction: row;
+  }
+}
+.temperature:hover{
+  color: #69BBFF;
+}
+/* ----- Настільні комп'ютери та ноутбуки ----------- */
+@media only screen
+and (min-width: 1224px) {
+  .container-content{
+    max-width: 800px;
+  }
+  .input-text{
+    height: 28px;
+    max-width: 300px;
+    font-size: 12px;
+  }
+  .temperature{
+    font-size: 22px;
+    text-align: center;
+    .temperature-degrees{
+      font-weight: 500;
+      font-size: 50px;
+    }
+}
+
+/* ----- iPad-и (орієнтація екрану Portrait і Landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .container-content{
+    max-width: 600px;
+  }
+  .input-text{
+    height: 18px;
+    max-width: 150px;
+    font-size: 12px;
+  }
+  .temperature{
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
+
+
